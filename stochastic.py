@@ -71,6 +71,9 @@ def main():
             "open_time": data["open_time"],
             "%K": k,
             "%D": d,
+            "high": data["high"],
+            "low": data["low"],
+            "close": data["close"],
         }
     )
     res.to_csv('stochastic-BTCUSDT-15m.csv', index = None, header=True)
